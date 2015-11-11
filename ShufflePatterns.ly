@@ -130,3 +130,66 @@
     piece = "Shuffle 5"
   }
 }
+
+
+\score {
+  \drums {
+  \time 4/4
+    << {
+        \repeat unfold 4 {
+          \tuplet 3/2 {hh8 \parenthesize sn  hh}
+          \tuplet 3/2 {<hh sn>8 \parenthesize sn hh}
+        }
+    } \\ {
+      \override TupletBracket.bracket-visibility = ##f
+      \omit TupletNumber
+      \repeat unfold 2 {
+        \tuplet 3/2 {bd8 bd4 r4 bd4 bd8 bd r4.}
+      }
+    } >>
+  }
+   \header {
+    piece = "Shuffle 6"
+  }
+}
+
+\score {
+  \drums {
+  \time 4/4
+    << {
+        \repeat unfold 4 {
+          \tuplet 3/2 {hh8 \parenthesize sn  hh}
+          \tuplet 3/2 {<hh sn>8 \parenthesize sn hh}
+        }
+    } \\ {
+      \override TupletBracket.bracket-visibility = ##f
+      \omit TupletNumber
+      \repeat unfold 2 {
+        \tuplet 3/2 {bd4 bd8 r4 bd8 r4. r}
+      }
+    } >>
+  }
+   \header {
+    piece = "Shuffle 7"
+  }
+}
+\score {
+  \drums {
+  \time 4/4
+    << {
+        \repeat unfold 4 {
+          \tuplet 3/2 {hh8 \parenthesize sn  hh}
+          \tuplet 3/2 {<hh sn>8 \parenthesize sn hh}
+        }
+    } \\ {
+      \override TupletBracket.bracket-visibility = ##f
+      \omit TupletNumber
+      \repeat unfold 2 {
+        \tuplet 3/2 {bd4 bd8 r4 bd4 bd8 bd r4.}
+      }
+    } >>
+  }
+   \header {
+    piece = "Shuffle 8"
+  }
+}
